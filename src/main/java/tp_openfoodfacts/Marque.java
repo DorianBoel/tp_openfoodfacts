@@ -21,4 +21,5 @@ public class Marque {
 	public void setMarque(String nom) {
 		this.nom = nom;
 	}
+
 }

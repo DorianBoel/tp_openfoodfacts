@@ -26,6 +26,7 @@ public class ApplicationOpenFoodFacts {
 	
 	for (int i=1;i<lines.size();i++) { 
 		String[] tokens=lines.get(i).split("|");
+		
 		produit.add(new Produit (tokens[3], new Categorie(tokens[1]) , new NutriScore(tokens[4])));
 	}
 	

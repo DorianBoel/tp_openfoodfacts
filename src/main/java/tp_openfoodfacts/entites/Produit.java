@@ -3,6 +3,8 @@ package tp_openfoodfacts.entites;
 import java.util.HashSet;
 import java.util.Set;
 
+import tp_openfoodfacts.Categorie;
+import tp_openfoodfacts.Marque;
 import tp_openfoodfacts.enums.NutriScore;
 
 public class Produit {
@@ -13,7 +15,7 @@ public class Produit {
 	
 	private NutriScore nutriScore;
 	
-	private Set<Ingredient> ingredients = new HashSet<>();
+	private Set<Ingredients> ingredients = new HashSet<>();
 	
 	private Set<Allergene> allergenes = new HashSet<>();
 	
@@ -39,7 +41,7 @@ public class Produit {
 		return nutriScore;
 	}
 
-	public Set<Ingredient> getIngredients() {
+	public Set<Ingredients> getIngredients() {
 		return ingredients;
 	}
 
